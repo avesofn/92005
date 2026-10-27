@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Fortnite: Save the Island</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="Images/logo.png" alt="Save the Island logo" class="logo">
+        </a>
+        <h1 id="main-title">Fortnite: Save the Island</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Missions</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <div class="about-section">
+                <div class="about-text">
+                    <h2>Contact Us</h2>
+                    <p>
+                        Have a question about the website or an idea for helping the
+                        environment? Send us a message
+                    </p>
+                    <p>
+                        You could share an idea for reducing rubbish at school, protecting
+                        wildlife or keeping your local area clean
+                    </p>
+                    <p>
+                        Every idea is worth considering, and working together can help
+                        people learn more about kaitiakitanga
+                    </p>
+                </div>
+                <img class="hero-image" src="Images/help.png"
+                     alt="Ways to help protect the environment"
+                     data-caption="Take action — everyone can help protect the environment">
+            </div>
+
+            <h2>Send a Message</h2>
+            <p>Fields marked with * are required</p>
+
+            <form action="https://formspree.io/f/xoeqaedn" method="POST">
+                <label for="first-name">*First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">*Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="email">*Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">*Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="bigImage" alt="">
+        <div id="caption"></div>
+    </div>
+
+    <footer>
+        <h3>Fortnite: Save the Island</h3>
+        <p>Look after the island and protect our environment</p>
+        <p>&copy; 2026 Save the Island</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
